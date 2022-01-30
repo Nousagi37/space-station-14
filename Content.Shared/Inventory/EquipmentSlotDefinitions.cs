@@ -41,6 +41,7 @@ namespace Content.Shared.Inventory
             GLOVES,
             SHOES,
             IDCARD,
+            EXOSUIT,
             POCKET1,
             POCKET2,
 
@@ -77,6 +78,7 @@ namespace Content.Shared.Inventory
             LEGS = 1 << 13,
             SHOES = 1 << 14,
             FEET = 1 << 14,
+            EXOSUITSTORAGE = 1 << 15
         }
 
         public static readonly IReadOnlyDictionary<Slots, string> SlotNames = new Dictionary<Slots, string>()
@@ -95,6 +97,7 @@ namespace Content.Shared.Inventory
             {Slots.IDCARD, "Id Card"},
             {Slots.POCKET1, "Left Pocket"},
             {Slots.POCKET2, "Right Pocket"},
+            {Slots.EXOSUIT, "Suit Storage"},
         };
 
         /// <summary>
@@ -119,6 +122,7 @@ namespace Content.Shared.Inventory
             {Slots.IDCARD, SlotFlags.IDCARD},
             {Slots.POCKET1, SlotFlags.POCKET},
             {Slots.POCKET2, SlotFlags.POCKET},
+            {Slots.EXOSUIT, SlotFlags.EXOSUITSTORAGE},
         };
 
         // for shared string dict, since we don't define these anywhere in content
@@ -139,6 +143,7 @@ namespace Content.Shared.Inventory
             "Inventory_IDCARD",
             "Inventory_POCKET1",
             "Inventory_POCKET2",
+            "Inventory_EXOSUIT",
         };
 
         // for shared string dict, since we don't define these anywhere in content

@@ -36,6 +36,7 @@
     sprite: Objects/Tanks/oxygen.rsi
     Slots:
     - Back
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: OxygenTank
@@ -49,6 +50,7 @@
     sprite: Objects/Tanks/yellow.rsi
     Slots:
     - Back
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: OxygenTank
@@ -62,6 +64,7 @@
     sprite: Objects/Tanks/red.rsi
     Slots:
     - Back
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: OxygenTank
@@ -82,6 +85,7 @@
     Slots:
     - Pocket
     - Belt
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: EmergencyOxygenTank
@@ -102,6 +106,7 @@
     Slots:
     - Pocket
     - Belt
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: ExtendedEmergencyOxygenTank
@@ -120,6 +125,7 @@
     Slots:
     - Pocket
     - Belt
+    - EXOSUITSTORAGE
 
 - type: entity
   parent: GasTankBase
@@ -138,6 +144,7 @@
       sprite: Objects/Tanks/generic.rsi
       Slots:
         - Back
+        - EXOSUITSTORAGE
 
 - type: entity
   parent: GasTankBase
@@ -157,3 +164,4 @@
       sprite: Objects/Tanks/plasma.rsi
       Slots:
         - Belt
+        - EXOSUITSTORAGE

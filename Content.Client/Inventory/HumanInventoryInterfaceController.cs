@@ -43,6 +43,7 @@ namespace Content.Client.Inventory
         private ItemSlotButton _hudButtonMask = default!;
         private ItemSlotButton _hudButtonEyes = default!;
         private ItemSlotButton _hudButtonEars = default!;
+        private ItemSlotButton _hudButtonExosuit = default!;
 
         private Control _topQuickButtonsContainer = default!;
         private Control _bottomLeftQuickButtonsContainer = default!;
@@ -83,6 +84,7 @@ namespace Content.Client.Inventory
             AddButton(out _hudButtonPocket1, Slots.POCKET1, "pocket");
             AddButton(out _hudButtonPocket2, Slots.POCKET2, "pocket");
             AddButton(out _hudButtonId, Slots.IDCARD, "id");
+            AddButton(out _hudButtonExosuit, Slots.EXOSUIT, "suit_storage");
 
             AddButton(out _hudButtonBack, Slots.BACKPACK, "back");
 
@@ -132,6 +134,7 @@ namespace Content.Client.Inventory
                 Orientation = LayoutOrientation.Horizontal,
                 Children =
                 {
+                    _hudButtonExosuit,
                     _hudButtonBelt,
                     _hudButtonBack
                 },
@@ -322,6 +325,7 @@ namespace Content.Client.Inventory
                 // Right column
                 AddButton(Slots.EARS, "ears", (2 * sizep, 0));
                 AddButton(Slots.IDCARD, "id", (2 * sizep, sizep));
+                AddButton(Slots.EXOSUIT, "suit_storage", (2 * sizep, 2 * sizep));
                 AddButton(Slots.GLOVES, "gloves", (2 * sizep, 2 * sizep));
                 AddButton(Slots.POCKET2, "pocket", (2 * sizep, 3 * sizep));
 
